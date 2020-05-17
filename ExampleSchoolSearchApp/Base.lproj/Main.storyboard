@@ -1,24 +1,251 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="exw-Pe-W48">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExampleSchoolSearchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="niW-GK-HA6">
+                                <rect key="frame" x="0.0" y="337" width="375" height="281"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最近公開された動画" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phN-PA-IzD">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="4Nj-vw-y7L"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GS7-C8-FWN">
+                                        <rect key="frame" x="0.0" y="49" width="375" height="57"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="57" id="KvR-Se-13B"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="90X-va-T1f">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="recentCell" id="ocT-hm-wsE">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="707-lf-qHo">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注目記事" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6t-2x-hMK">
+                                        <rect key="frame" x="0.0" y="131" width="375" height="68"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PVd-fh-gfV">
+                                        <rect key="frame" x="0.0" y="224" width="375" height="57"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="57" id="6XD-ab-0ed"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="a96-r8-X2b">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="attentionCell" id="iCr-SR-EE0">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nAz-XQ-CdK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nbN-xE-Cdr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XO2-dh-GXi">
+                                <rect key="frame" x="305" y="20" width="46" height="31"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <searchBar contentMode="redraw" placeholder="気になるキーワードを入力" translatesAutoresizingMaskIntoConstraints="NO" id="FJp-aP-sfS">
+                                <rect key="frame" x="0.0" y="71" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="3su-lA-cpJ">
+                                <rect key="frame" x="5" y="167" width="365" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5RA-PQ-gca">
+                                        <rect key="frame" x="0.0" y="0.0" width="101.5" height="110"/>
+                                        <state key="normal" title="エリアから探す"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83q-fm-7Z4">
+                                        <rect key="frame" x="131.5" y="0.0" width="102" height="110"/>
+                                        <state key="normal" title="通学時間から探す"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avA-iR-CGP">
+                                        <rect key="frame" x="263.5" y="0.0" width="101.5" height="110"/>
+                                        <state key="normal" title="現在地から探す"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="PRI-sv-fut"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FJp-aP-sfS" firstAttribute="trailing" secondItem="niW-GK-HA6" secondAttribute="trailing" id="6jE-6H-DH8"/>
+                            <constraint firstItem="XO2-dh-GXi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7MP-ca-pGr"/>
+                            <constraint firstItem="niW-GK-HA6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="337" id="Cf8-6p-jGl"/>
+                            <constraint firstItem="nbN-xE-Cdr" firstAttribute="centerY" secondItem="XO2-dh-GXi" secondAttribute="centerY" id="EF0-mb-gMq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="niW-GK-HA6" secondAttribute="bottom" id="JnN-28-ukn"/>
+                            <constraint firstItem="nbN-xE-Cdr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LrI-JC-eg0"/>
+                            <constraint firstItem="FJp-aP-sfS" firstAttribute="leading" secondItem="niW-GK-HA6" secondAttribute="leading" id="Pl4-hR-1P9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3su-lA-cpJ" secondAttribute="trailing" constant="5" id="QDQ-1w-7rt"/>
+                            <constraint firstItem="niW-GK-HA6" firstAttribute="top" secondItem="3su-lA-cpJ" secondAttribute="bottom" constant="60" id="Y7r-NK-aFY"/>
+                            <constraint firstItem="FJp-aP-sfS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="71" id="bSX-xE-a2a"/>
+                            <constraint firstItem="FJp-aP-sfS" firstAttribute="top" secondItem="nbN-xE-Cdr" secondAttribute="bottom" id="gzE-Sq-3ca"/>
+                            <constraint firstItem="niW-GK-HA6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hyt-ab-UwY"/>
+                            <constraint firstItem="3su-lA-cpJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="nS8-Ik-OxY"/>
+                            <constraint firstItem="FJp-aP-sfS" firstAttribute="leading" secondItem="nbN-xE-Cdr" secondAttribute="leading" id="oBc-JY-aHs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XO2-dh-GXi" secondAttribute="trailing" constant="24" id="oPt-sQ-ey5"/>
+                            <constraint firstItem="niW-GK-HA6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u48-94-jQD"/>
+                            <constraint firstItem="FJp-aP-sfS" firstAttribute="trailing" secondItem="nbN-xE-Cdr" secondAttribute="trailing" id="w4z-vl-XlI"/>
+                            <constraint firstItem="XO2-dh-GXi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="wGp-sv-6zj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="TRp-e1-mlK"/>
+                    <connections>
+                        <outlet property="areaSearchButton" destination="5RA-PQ-gca" id="3CT-hx-s45"/>
+                        <outlet property="attentionCollectionView" destination="PVd-fh-gfV" id="cZz-ZR-MSi"/>
+                        <outlet property="homeSearchBar" destination="FJp-aP-sfS" id="Cwg-Zw-JTa"/>
+                        <outlet property="placeSearchButton" destination="avA-iR-CGP" id="aV2-o1-FCx"/>
+                        <outlet property="recentlyCollectionView" destination="GS7-C8-FWN" id="4pX-lf-dPF"/>
+                        <outlet property="timeSearchButton" destination="83q-fm-7Z4" id="hne-X1-4WC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-882.39999999999998" y="875.71214392803608"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="g41-lC-Lt7">
+            <objects>
+                <tableViewController id="GA3-Dj-u8e" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lP7-Kx-q1w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchCell" id="qE2-Dq-AMT">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qE2-Dq-AMT" id="4Gh-Sj-EUq">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="GA3-Dj-u8e" id="cnl-QM-Dba"/>
+                            <outlet property="delegate" destination="GA3-Dj-u8e" id="XQ3-d2-bpt"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Search" id="SK0-uJ-hsS"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z17-pf-6H4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-198" y="876"/>
+        </scene>
+        <!--Favorite-->
+        <scene sceneID="qGc-sG-Byw">
+            <objects>
+                <tableViewController id="lv0-eK-Arb" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qgh-lF-lLq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoriteCell" id="WLq-JT-Pyf">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WLq-JT-Pyf" id="bHq-tH-ZDG">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lv0-eK-Arb" id="gea-Ed-Y0D"/>
+                            <outlet property="delegate" destination="lv0-eK-Arb" id="Bd2-O9-Ut9"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Favorite" id="rAt-OH-DkU"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kly-hf-C9Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="505" y="876"/>
+        </scene>
+        <!--MyPage-->
+        <scene sceneID="f61-Dl-e35">
+            <objects>
+                <viewController id="zbp-g6-i1y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CKr-Sh-o45">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gtC-vc-ETs"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MyPage" id="WkF-Ga-4u3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TQR-m4-9Bl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1246" y="876"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xEl-BG-shA">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="exw-Pe-W48" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hCl-Q4-irr">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="JAh-ay-Kvs"/>
+                        <segue destination="GA3-Dj-u8e" kind="relationship" relationship="viewControllers" id="rgz-VL-Gwj"/>
+                        <segue destination="lv0-eK-Arb" kind="relationship" relationship="viewControllers" id="Imr-pj-Ef0"/>
+                        <segue destination="zbp-g6-i1y" kind="relationship" relationship="viewControllers" id="HXV-aJ-QdN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9tg-l2-tof" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="101.19940029985008"/>
         </scene>
     </scenes>
 </document>

@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38903CC75F48926AB0DBEB07 /* Pods_ExampleSchoolSearchAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B3003DB8679C947AF55159E /* Pods_ExampleSchoolSearchAppTests.framework */; };
+		938D5CE4135BE9713AC28FD9 /* Pods_ExampleSchoolSearchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7982586F74864DF0BA4987F5 /* Pods_ExampleSchoolSearchApp.framework */; };
 		B717CBFC246CDE010040CE3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717CBFB246CDE010040CE3D /* AppDelegate.swift */; };
 		B717CBFE246CDE010040CE3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717CBFD246CDE010040CE3D /* ViewController.swift */; };
 		B717CC01246CDE010040CE3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B717CBFF246CDE010040CE3D /* Main.storyboard */; };
@@ -14,6 +16,16 @@
 		B717CC06246CDE110040CE3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B717CC04246CDE110040CE3D /* LaunchScreen.storyboard */; };
 		B717CC11246CDE110040CE3D /* ExampleSchoolSearchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717CC10246CDE110040CE3D /* ExampleSchoolSearchAppTests.swift */; };
 		B717CC1C246CDE110040CE3D /* ExampleSchoolSearchAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717CC1B246CDE110040CE3D /* ExampleSchoolSearchAppUITests.swift */; };
+		B719A922246D065A00431072 /* RakutenAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719A921246D065A00431072 /* RakutenAPI.swift */; };
+		B719A923246D065A00431072 /* RakutenAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719A921246D065A00431072 /* RakutenAPI.swift */; };
+		B719A924246D065A00431072 /* RakutenAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719A921246D065A00431072 /* RakutenAPI.swift */; };
+		B719A926246D06FB00431072 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719A925246D06FB00431072 /* ItemData.swift */; };
+		B719A927246D06FB00431072 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719A925246D06FB00431072 /* ItemData.swift */; };
+		B719A928246D06FB00431072 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719A925246D06FB00431072 /* ItemData.swift */; };
+		B719A92A246D0A6700431072 /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719A929246D0A6700431072 /* RealmData.swift */; };
+		B719A92B246D0A6700431072 /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719A929246D0A6700431072 /* RealmData.swift */; };
+		B719A92C246D0A6700431072 /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719A929246D0A6700431072 /* RealmData.swift */; };
+		E978A69D9C617A3348FFD6E0 /* Pods_ExampleSchoolSearchApp_ExampleSchoolSearchAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0E4255BAFDAE089CDBFCD0 /* Pods_ExampleSchoolSearchApp_ExampleSchoolSearchAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17F8322C4C3CAED54903AE96 /* Pods-ExampleSchoolSearchAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleSchoolSearchAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ExampleSchoolSearchAppTests/Pods-ExampleSchoolSearchAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B3003DB8679C947AF55159E /* Pods_ExampleSchoolSearchAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleSchoolSearchAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D6A288F717896B6698EAFA0 /* Pods-ExampleSchoolSearchAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleSchoolSearchAppTests.release.xcconfig"; path = "Target Support Files/Pods-ExampleSchoolSearchAppTests/Pods-ExampleSchoolSearchAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		3BEEDDADDB3078036BEBA2B6 /* Pods-ExampleSchoolSearchApp-ExampleSchoolSearchAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleSchoolSearchApp-ExampleSchoolSearchAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ExampleSchoolSearchApp-ExampleSchoolSearchAppUITests/Pods-ExampleSchoolSearchApp-ExampleSchoolSearchAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D5A3084E763230EACD49003 /* Pods-ExampleSchoolSearchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleSchoolSearchApp.release.xcconfig"; path = "Target Support Files/Pods-ExampleSchoolSearchApp/Pods-ExampleSchoolSearchApp.release.xcconfig"; sourceTree = "<group>"; };
+		7982586F74864DF0BA4987F5 /* Pods_ExampleSchoolSearchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleSchoolSearchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B717CBF8246CDE010040CE3D /* ExampleSchoolSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleSchoolSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B717CBFB246CDE010040CE3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B717CBFD246CDE010040CE3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +65,12 @@
 		B717CC17246CDE110040CE3D /* ExampleSchoolSearchAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleSchoolSearchAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B717CC1B246CDE110040CE3D /* ExampleSchoolSearchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSchoolSearchAppUITests.swift; sourceTree = "<group>"; };
 		B717CC1D246CDE110040CE3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B719A921246D065A00431072 /* RakutenAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RakutenAPI.swift; sourceTree = "<group>"; };
+		B719A925246D06FB00431072 /* ItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
+		B719A929246D0A6700431072 /* RealmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
+		CAE58AFF00B2F5A14E643257 /* Pods-ExampleSchoolSearchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleSchoolSearchApp.debug.xcconfig"; path = "Target Support Files/Pods-ExampleSchoolSearchApp/Pods-ExampleSchoolSearchApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DF0E4255BAFDAE089CDBFCD0 /* Pods_ExampleSchoolSearchApp_ExampleSchoolSearchAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleSchoolSearchApp_ExampleSchoolSearchAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B3AD3CC223522F3360910D /* Pods-ExampleSchoolSearchApp-ExampleSchoolSearchAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleSchoolSearchApp-ExampleSchoolSearchAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ExampleSchoolSearchApp-ExampleSchoolSearchAppUITests/Pods-ExampleSchoolSearchApp-ExampleSchoolSearchAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				938D5CE4135BE9713AC28FD9 /* Pods_ExampleSchoolSearchApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38903CC75F48926AB0DBEB07 /* Pods_ExampleSchoolSearchAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +94,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E978A69D9C617A3348FFD6E0 /* Pods_ExampleSchoolSearchApp_ExampleSchoolSearchAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14EC7E640B39D97754246EAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7982586F74864DF0BA4987F5 /* Pods_ExampleSchoolSearchApp.framework */,
+				DF0E4255BAFDAE089CDBFCD0 /* Pods_ExampleSchoolSearchApp_ExampleSchoolSearchAppUITests.framework */,
+				2B3003DB8679C947AF55159E /* Pods_ExampleSchoolSearchAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A8C14142D9745461E770058 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAE58AFF00B2F5A14E643257 /* Pods-ExampleSchoolSearchApp.debug.xcconfig */,
+				6D5A3084E763230EACD49003 /* Pods-ExampleSchoolSearchApp.release.xcconfig */,
+				F7B3AD3CC223522F3360910D /* Pods-ExampleSchoolSearchApp-ExampleSchoolSearchAppUITests.debug.xcconfig */,
+				3BEEDDADDB3078036BEBA2B6 /* Pods-ExampleSchoolSearchApp-ExampleSchoolSearchAppUITests.release.xcconfig */,
+				17F8322C4C3CAED54903AE96 /* Pods-ExampleSchoolSearchAppTests.debug.xcconfig */,
+				2D6A288F717896B6698EAFA0 /* Pods-ExampleSchoolSearchAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B717CBEF246CDE010040CE3D = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +131,8 @@
 				B717CC0F246CDE110040CE3D /* ExampleSchoolSearchAppTests */,
 				B717CC1A246CDE110040CE3D /* ExampleSchoolSearchAppUITests */,
 				B717CBF9246CDE010040CE3D /* Products */,
+				6A8C14142D9745461E770058 /* Pods */,
+				14EC7E640B39D97754246EAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,7 +151,10 @@
 			children = (
 				B717CBFB246CDE010040CE3D /* AppDelegate.swift */,
 				B717CBFD246CDE010040CE3D /* ViewController.swift */,
+				B719A929246D0A6700431072 /* RealmData.swift */,
 				B717CBFF246CDE010040CE3D /* Main.storyboard */,
+				B719A921246D065A00431072 /* RakutenAPI.swift */,
+				B719A925246D06FB00431072 /* ItemData.swift */,
 				B717CC02246CDE110040CE3D /* Assets.xcassets */,
 				B717CC04246CDE110040CE3D /* LaunchScreen.storyboard */,
 				B717CC07246CDE110040CE3D /* Info.plist */,
@@ -132,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B717CC20246CDE110040CE3D /* Build configuration list for PBXNativeTarget "ExampleSchoolSearchApp" */;
 			buildPhases = (
+				99761D297DD126D5E22368FA /* [CP] Check Pods Manifest.lock */,
 				B717CBF4246CDE010040CE3D /* Sources */,
 				B717CBF5246CDE010040CE3D /* Frameworks */,
 				B717CBF6246CDE010040CE3D /* Resources */,
+				B6B3A375DCDB1804867CBE27 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B717CC23246CDE110040CE3D /* Build configuration list for PBXNativeTarget "ExampleSchoolSearchAppTests" */;
 			buildPhases = (
+				7A1354012C894319C53A03F5 /* [CP] Check Pods Manifest.lock */,
 				B717CC08246CDE110040CE3D /* Sources */,
 				B717CC09246CDE110040CE3D /* Frameworks */,
 				B717CC0A246CDE110040CE3D /* Resources */,
@@ -167,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B717CC26246CDE110040CE3D /* Build configuration list for PBXNativeTarget "ExampleSchoolSearchAppUITests" */;
 			buildPhases = (
+				4A79467A80018A0AF809D803 /* [CP] Check Pods Manifest.lock */,
 				B717CC13246CDE110040CE3D /* Sources */,
 				B717CC14246CDE110040CE3D /* Frameworks */,
 				B717CC15246CDE110040CE3D /* Resources */,
+				2A78B593996891FA5F8E7C6D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,13 +253,16 @@
 				TargetAttributes = {
 					B717CBF7246CDE010040CE3D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1130;
 					};
 					B717CC0B246CDE110040CE3D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = B717CBF7246CDE010040CE3D;
 					};
 					B717CC16246CDE110040CE3D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = B717CBF7246CDE010040CE3D;
 					};
 				};
@@ -251,12 +314,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A78B593996891FA5F8E7C6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExampleSchoolSearchApp-ExampleSchoolSearchAppUITests/Pods-ExampleSchoolSearchApp-ExampleSchoolSearchAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExampleSchoolSearchApp-ExampleSchoolSearchAppUITests/Pods-ExampleSchoolSearchApp-ExampleSchoolSearchAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExampleSchoolSearchApp-ExampleSchoolSearchAppUITests/Pods-ExampleSchoolSearchApp-ExampleSchoolSearchAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A79467A80018A0AF809D803 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExampleSchoolSearchApp-ExampleSchoolSearchAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A1354012C894319C53A03F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExampleSchoolSearchAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99761D297DD126D5E22368FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExampleSchoolSearchApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6B3A375DCDB1804867CBE27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExampleSchoolSearchApp/Pods-ExampleSchoolSearchApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExampleSchoolSearchApp/Pods-ExampleSchoolSearchApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExampleSchoolSearchApp/Pods-ExampleSchoolSearchApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B717CBF4246CDE010040CE3D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B717CBFE246CDE010040CE3D /* ViewController.swift in Sources */,
+				B719A922246D065A00431072 /* RakutenAPI.swift in Sources */,
+				B719A92A246D0A6700431072 /* RealmData.swift in Sources */,
+				B719A926246D06FB00431072 /* ItemData.swift in Sources */,
 				B717CBFC246CDE010040CE3D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +434,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B719A927246D06FB00431072 /* ItemData.swift in Sources */,
+				B719A92B246D0A6700431072 /* RealmData.swift in Sources */,
 				B717CC11246CDE110040CE3D /* ExampleSchoolSearchAppTests.swift in Sources */,
+				B719A923246D065A00431072 /* RakutenAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +445,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B719A928246D06FB00431072 /* ItemData.swift in Sources */,
+				B719A92C246D0A6700431072 /* RealmData.swift in Sources */,
 				B717CC1C246CDE110040CE3D /* ExampleSchoolSearchAppUITests.swift in Sources */,
+				B719A924246D065A00431072 /* RakutenAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +605,7 @@
 		};
 		B717CC21246CDE110040CE3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAE58AFF00B2F5A14E643257 /* Pods-ExampleSchoolSearchApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -441,13 +617,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rentarou1994.ExampleSchoolSearchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		B717CC22246CDE110040CE3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D5A3084E763230EACD49003 /* Pods-ExampleSchoolSearchApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -459,13 +636,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rentarou1994.ExampleSchoolSearchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		B717CC24246CDE110040CE3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17F8322C4C3CAED54903AE96 /* Pods-ExampleSchoolSearchAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -479,7 +657,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rentarou1994.ExampleSchoolSearchAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExampleSchoolSearchApp.app/ExampleSchoolSearchApp";
 			};
@@ -487,6 +665,7 @@
 		};
 		B717CC25246CDE110040CE3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D6A288F717896B6698EAFA0 /* Pods-ExampleSchoolSearchAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -500,7 +679,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rentarou1994.ExampleSchoolSearchAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExampleSchoolSearchApp.app/ExampleSchoolSearchApp";
 			};
@@ -508,6 +687,7 @@
 		};
 		B717CC27246CDE110040CE3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7B3AD3CC223522F3360910D /* Pods-ExampleSchoolSearchApp-ExampleSchoolSearchAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -520,7 +700,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rentarou1994.ExampleSchoolSearchAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ExampleSchoolSearchApp;
 			};
@@ -528,6 +708,7 @@
 		};
 		B717CC28246CDE110040CE3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BEEDDADDB3078036BEBA2B6 /* Pods-ExampleSchoolSearchApp-ExampleSchoolSearchAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,7 +721,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rentarou1994.ExampleSchoolSearchAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ExampleSchoolSearchApp;
 			};
